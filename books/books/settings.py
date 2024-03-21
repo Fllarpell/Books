@@ -26,7 +26,7 @@ SOCIAL_AUTH_GITHUB_SECRET = '7addee8acbb8f49030f19fb5f3bfb892a4c9f4a7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '192.168.56.1']
 
 # Application definition
 
@@ -90,7 +90,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'books_db',
         'USER': 'books_user',
-        'PASSWORD': 'password',
+        'PASSWORD': '48613',
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -151,3 +151,5 @@ REST_FRAMEWORK = {
 }
 
 SOCIAL_AUTH_POSTGRES_JSONFIELD = True
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
